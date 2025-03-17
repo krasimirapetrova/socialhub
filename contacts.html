@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+
+</head>
+<body>
+    <header>
+        <h1>Социален хъб</h1>
+        <img src="Изображения/logo.png" width="50" alt="Logo" />
+        <nav>
+            <a href="index.html">Начало</a> |
+            <a href="aboutUs.html">За нас</a> |
+            <a href="partners.html">Партньори</a> |
+            <a href="contacts.html"><b>Контакти</b></a>
+            <input type="text" value="Търси..." />
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ВашатаСтраница" target="_blank"><img src="Изображения/facebook-icon.png" width="30" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/ВашатаСтраница" target="_blank"><img src="Изображения/instagram-icon.png" width="30" alt="Instagram" /></a>
+            <a href="https://twitter.com/ВашатаСтраница" target="_blank"><img src="Изображения/twitter-icon.png" width="30" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/ВашатаСтраница" target="_blank"><img src="Изображения/linkedin-icon.png" width="30" alt="LinkedIn" /></a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h3>Свържете се с нас</h3>
+            <p>
+                Не се притеснявайте да се свържете с нас. Ние ще Ви запознаем с възможностите, които предоставя СОЦИАЛЕН ХЪБ.<br>
+                Можете да зададете въпрос и като ни позвъните на телефона.
+            </p>
+            <p>Телефон за връзка: 0888 123 456</p>
+        </section>
+        <div class="container">
+            <fieldset>
+                <h3>Адрес</h3>
+                <p>
+                    Населено място: Русе<br>
+                    Адрес: ул. Иван Вазов 18<br>
+                    Уеб сайт: socialhub.bg<br>
+                    Социални мрежи: social_hub<br>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <h3>Контакти</h3>
+                <p>
+                    телефон:0884729482<br>
+                    ел. поща: socialhub@gmail.com<br>
+                </p>
+            </fieldset>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.5306024779215!2d25.94839841234514!3d43.84482987097307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae60c1560a043b%3A0xc985a36730262872!2z0JzQkyAi0JHQsNCx0LAg0KLQvtC90LrQsCI!5e0!3m2!1sbg!2sbg!4v1741647822237!5m2!1sbg!2sbg"
+                        width=500
+                        height=450
+                        style="border:0;"
+                        allowfullscreen=" "
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <section>
+                <h3>Нашата <b>МИСИЯ</b></h3>
+                <p>Целта ни е да свържем местни производители, студенти и доброволци, за да осигурим устойчиво развитие на социални инициативи.</p>
+
+                <h3>Как работи <b>СОЦИАЛЕН ХЪБ</b></h3>
+                <p>Платформата предоставя възможност за онлайн продажба на продукти от местни производители и услуги за създаване на онлайн магазини.</p>
+
+                <h3>Защо можем да си <b>ПОМАГАМЕ ВЗАИМНО</b></h3>
+                <p>Работим заедно, за да създадем социални и икономически възможности за всички участници в платформата.</p>
+
+                <p><a href="aboutUs.html"><b>Виж още...</b></a></p>
+            </section>
+
+            <section>
+                <h3>Видео за МГ Баба Тонка</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8awFtv2nWco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <h3>Контактна форма</h3>
+                <form action="process_form.php" method="POST">
+                    <label for="name">Име:</label>
+                    <input type="text" id="name" name="name" size="30" required><br><br>
+
+                    <label for="email">Имейл:</label>
+                    <input type="email" id="email" name="email" size="30" required><br><br>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone" size="30"><br><br>
+
+                    <label for="subject">Тема:</label>
+                    <input type="text" id="subject" name="subject" size="30" required><br><br>
+
+                    <label for="message">Съобщение:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea><br><br>
+
+                    <input type="submit" value="Изпрати">
+                </form>
+            </section>
+    </main>
+
+    <footer>
+        <div>Кристина Йотова | МГ Баба Тонка 2024г.</div>
+    </footer>
+</body>
+</html>

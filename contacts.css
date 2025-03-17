@@ -1,0 +1,154 @@
+/* Общи стилове за body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Черно меню */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+/* Линкове в менюто */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Променя фон на линковете при ховър */
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Променя фон на линковете при натискане */
+nav a:active {
+    background-color: #333;
+}
+
+/* Стил на търсачката */
+nav input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* Социални икони */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Центриране на иконите хоризонтално */
+    margin-top: 30px; /* Малко разстояние отгоре */
+}
+
+.social-icons a {
+    margin: 0 15px; /* Разстояние между иконите */
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Стил на секциите */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заглавия в секциите */
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Подобряване на линковете за "виж още" */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Контактната форма */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Подравняване на футера */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Отзивчив дизайн - за мобилни устройства */
+@media (max-width: 768px) {
+    /* Подредба на менюто за мобилни устройства */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    nav input[type="text"] {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    /* Подредба на социалните икони */
+    .social-icons {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        margin: 10px 0;
+    }
+}
